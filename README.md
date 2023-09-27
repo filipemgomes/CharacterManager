@@ -34,8 +34,9 @@ cd pasta_do_projeto dotnet restore
 3.	Execute a API:
 
 ```bash
-dotnet run 
+dotnet
 ```
+
 
 ________________________________________
 

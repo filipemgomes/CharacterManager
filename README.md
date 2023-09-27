@@ -1,38 +1,51 @@
-# API de Gerenciamento de Personagens e Batalhas
-
+API de Gerenciamento de Personagens e Batalhas
 Uma API RESTful para criar, gerenciar personagens e realizar batalhas entre eles.
+________________________________________
+Índice
+•	Pré-requisitos
+•	Instalação e Configuração
+•	Endpoints
+•	Personagem
+•	Batalha
+•	Exemplos de Uso
+•	Testes
+•	Contribuição
+•	Licença
+•	Contato
+________________________________________
+Pré-requisitos
+•	.NET 6
+•	Banco de dados In-Memory
+________________________________________
+Instalação e Configuração
+1.	Clone o repositório:
 
----
+1. 
+```bash
+git clone https://github.com/seu_usuario/nome_do_repositorio.git
+```
 
-## Índice
+2.	Navegue até a pasta do projeto e instale as dependências:
 
-- [Pré-requisitos](#pré-requisitos)
-- [Instalação e Configuração](#instalação-e-configuração)
-- [Endpoints](#endpoints)
-  - [Personagem](#personagem)
-  - [Batalha](#batalha)
-- [Exemplos de Uso](#exemplos-de-uso)
-- [Testes](#testes)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
-- [Contato](#contato)
+1. ```bash
+cd pasta_do_projeto dotnet restore 
+```
 
----
+3.	Execute a API:
 
-## Pré-requisitos
+```bash
+dotnet run 
+```
 
-- .NET 6
-- Banco de dados In-Memory
+________________________________________
 
----
+__Endpoints__
 
-## Instalação e Configuração
+__Personagem__
 
-1. Clone o repositório:
-
-git clone 
-
-2. Navegue até a pasta do projeto e instale as dependências:
-cd pasta_do_projeto
-dotnet restore
-
+__•	Listar Todos os Personagens__
+	•	__Método:__ GET
+	•	__Endpoint:__ /api/personagem
+__•	Obter Detalhes de um Personagem__
+	•	__Método:__ GET
+	•	__Endpoint:__ /api/personagem/{id}

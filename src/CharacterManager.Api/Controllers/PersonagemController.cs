@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using CharacterManager.Api.RequestApi;
 using CharacterManager.Application.Models;
 using CharacterManager.Domain.Entities;
 using CharacterManager.Domain.Enums;

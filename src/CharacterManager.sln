@@ -5,13 +5,19 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterManager.Domain", "CharacterManager.Domain\CharacterManager.Domain.csproj", "{E174A45B-3E2E-40AF-A720-9174DC6DADFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterManager.Infra", "CharacterManager.Infra\CharacterManager.Infra.csproj", "{59743E07-91D2-4DE8-AB86-A997E208C7BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterManager.Infra", "CharacterManager.Infra\CharacterManager.Infra.csproj", "{59743E07-91D2-4DE8-AB86-A997E208C7BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterManager.Application", "CharacterManager.Application\CharacterManager.Application.csproj", "{F4E121B5-95AC-4627-97DA-3399587416FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterManager.Application", "CharacterManager.Application\CharacterManager.Application.csproj", "{F4E121B5-95AC-4627-97DA-3399587416FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CharacterManager.Tests", "CharacterManager.Tests\CharacterManager.Tests.csproj", "{1AB8BFF4-D5BC-4650-AB0D-DB594BE5A1EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterManager.Tests", "CharacterManager.Tests\CharacterManager.Tests.csproj", "{1AB8BFF4-D5BC-4650-AB0D-DB594BE5A1EA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CharacterManager.Api", "CharacterManager.Api\CharacterManager.Api.csproj", "{A5C34666-4358-43D5-9DE2-AD68727DF376}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configs", "Configs", "{100572E8-3C91-4E07-97B3-DC2A6B289FCD}"
+	ProjectSection(SolutionItems) = preProject
+		..\.gitignore = ..\.gitignore
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

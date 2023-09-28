@@ -31,8 +31,8 @@ API desenvolvida para gerenciar personagens e batalhas em um jogo de RPG. Esta A
 
 ## Como usar
 
-<b>1. Criar um personagem:</b>
-* Antes de criar um personagem, obtenha a lista de profissões disponíveis usando o endpoint ````GET /api/personagem/profissoes```.
+1. __Criar um personagem:__
+* Antes de criar um personagem, obtenha a lista de profissões disponíveis usando o endpoint ```GET /api/personagem/profissoes```.
 * Use a profissão obtida na lista para criar um personagem.
 * Exemplo: <b>POST /api/personagem com corpo da requisição:</b>
 

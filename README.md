@@ -9,11 +9,12 @@
 * .NET 6
 * IDE (Recomendado: Visual Studio ou Visual Studio Code)
 
-<h3><b>Como executar</b>h3>
+### Como executar
 
-1.	Clone o repositório para sua máquina local.
-2.	Abra a solução no Visual Studio ou Visual Studio Code.
-3.	Execute o projeto.
+1. Clone o repositório para sua máquina local.
+2. Abra a solução no Visual Studio ou Visual Studio Code.
+3. Execute o projeto.
+
 
 ________________________________________
 

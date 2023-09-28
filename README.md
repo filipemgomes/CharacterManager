@@ -17,9 +17,9 @@ API desenvolvida para gerenciar personagens e batalhas em um jogo de RPG. Esta A
 
 ________________________________________
 
-### Endpoints
+## Endpoints
 
-#### Personagem
+### Personagem
 
 * <b>Listar todos os personagens: </b> ```GET /api/personagem```
 * <b>Obter detalhes de um personagem específico:</b> ```GET /api/personagem/{id}```
@@ -27,13 +27,13 @@ ________________________________________
 * <b>Obter status de um personagem:</b> ```GET /api/personagem/{id}/status```
 * <b>Listar profissões disponíveis:</b> ```GET /api/personagem/profissoes```
 
-#### Batalha
+### Batalha
 
-•	<b>Iniciar uma batalha entre dois personagens:</b> ```POST /api/batalha/iniciar```
+* <b>Iniciar uma batalha entre dois personagens:</b> ```POST /api/batalha/iniciar```
 
 ________________________________________
 
-<h3><b>Como usar**</</b>h3>
+## Como usar**<
 
 <b>1. Criar um personagem:</b>
 •	Antes de criar um personagem, obtenha a lista de profissões disponíveis usando o endpoint ````GET /api/personagem/profissoes```.

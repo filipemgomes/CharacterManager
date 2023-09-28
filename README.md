@@ -6,11 +6,8 @@
 
 <h3><b>Pré-requisitos</b></h3>
 
-<p>
 •	.NET 6
-
 •	<b>IDE (Recomendado:</b> Visual Studio ou Visual Studio Code)
-</p>
 
 
 <h3><b>Como executar</b>h3>

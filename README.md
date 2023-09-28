@@ -1,21 +1,19 @@
 # Character Manager API
   
-### Descrição
+## Descrição
 
 API desenvolvida para gerenciar personagens e batalhas em um jogo de RPG. Esta API permite criar personagens, listar personagens, obter detalhes de um personagem específico, iniciar uma batalha entre dois personagens e obter o log da batalha.
 
-### Pré-requisitos
+## Pré-requisitos
 
 * .NET 6
 * IDE (Recomendado: Visual Studio ou Visual Studio Code)
 
-### Como executar
+## Como executar
 
 1. Clone o repositório para sua máquina local.
 2. Abra a solução no Visual Studio ou Visual Studio Code.
 3. Execute o projeto.
-
-________________________________________
 
 ## Endpoints
 
@@ -31,14 +29,12 @@ ________________________________________
 
 * <b>Iniciar uma batalha entre dois personagens:</b> ```POST /api/batalha/iniciar```
 
-________________________________________
+## Como usar
 
-## Como usar**<
-
-<b>1. Criar um personagem:</b>
-•	Antes de criar um personagem, obtenha a lista de profissões disponíveis usando o endpoint ````GET /api/personagem/profissoes```.
-•	Use a profissão obtida na lista para criar um personagem.
-•	Exemplo: <b>POST /api/personagem com corpo da requisição:</b>
+__1. Criar um personagem:__
+* Antes de criar um personagem, obtenha a lista de profissões disponíveis usando o endpoint ````GET /api/personagem/profissoes```.
+* Use a profissão obtida na lista para criar um personagem.
+* Exemplo: <b>POST /api/personagem com corpo da requisição:</b>
 
 ```
 {

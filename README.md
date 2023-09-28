@@ -15,20 +15,19 @@ API desenvolvida para gerenciar personagens e batalhas em um jogo de RPG. Esta A
 2. Abra a solução no Visual Studio ou Visual Studio Code.
 3. Execute o projeto.
 
-
 ________________________________________
 
-<h3><b>Endpoints</b></h3>
+### Endpoints
 
-<h5><b>Personagem</b></h5>
+##### Personagem
 
-•	<b>Listar todos os personagens: </b> ```GET /api/personagem```
-•	<b>Obter detalhes de um personagem específico:</b> ```GET /api/personagem/{id}```
-•	<b>Criar um novo personagem:</b> ```POST /api/personagem```
-•	<b>Obter status de um personagem:</b> ```GET /api/personagem/{id}/status```
-•	<b>Listar profissões disponíveis:</b> ```GET /api/personagem/profissoes```
+* <b>Listar todos os personagens: </b> ```GET /api/personagem```
+* <b>Obter detalhes de um personagem específico:</b> ```GET /api/personagem/{id}```
+* <b>Criar um novo personagem:</b> ```POST /api/personagem```
+* <b>Obter status de um personagem:</b> ```GET /api/personagem/{id}/status```
+* <b>Listar profissões disponíveis:</b> ```GET /api/personagem/profissoes```
 
-<h5><b>Batalha</b></h5>
+#####Batalha
 
 •	<b>Iniciar uma batalha entre dois personagens:</b> ```POST /api/batalha/iniciar```
 

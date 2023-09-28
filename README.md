@@ -6,7 +6,7 @@
 
 <h3><b>Pré-requisitos</b></h3>
 
-•	.NET 6
+•	.NET 6</n>
 •	<b>IDE (Recomendado:</b> Visual Studio ou Visual Studio Code)
 
 

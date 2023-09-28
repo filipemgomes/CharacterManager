@@ -1,4 +1,6 @@
 ﻿using CharacterManager.Application.Interfaces;
+using CharacterManager.Domain.Entities;
+using CharacterManager.Domain.Exceptions;
 using CharacterManager.Domain.Interfaces.Repositories;
 using CharacterManager.Domain.Repositories;
 
@@ -19,8 +21,8 @@ namespace CharacterManager.Application
 
         public void IniciarBatalha(Guid personagem1Id, Guid personagem2Id)
         {
-            var personagem1 = _personagemRepository.ObterPorId(personagem1Id);
-            var personagem2 = _personagemRepository.ObterPorId(personagem2Id);
+            var personagem1 = ValidarPersonagem(personagem1Id);
+            var personagem2 = ValidarPersonagem(personagem2Id);
 
             int velocidadeCalculadaPersonagem1, velocidadeCalculadaPersonagem2;
 
@@ -82,6 +84,16 @@ namespace CharacterManager.Application
                                    Personagem2Id,
                                    _turno,
                                    $"Turno: {_turno}: {vencedor.Nome} venceu a batalha com {vencedor.PontosDeVida} pontos de vida restantes!");
+        }
+
+        private Personagem ValidarPersonagem(Guid personagemId)
+        {
+            var personagem = _personagemRepository.ObterPorId(personagemId);
+
+            if (personagem == null)
+                throw new DomainException($"Personagem com ID {personagemId} não encontrado.");
+
+            return personagem;
         }
     }
 }

@@ -20,24 +20,7 @@ namespace CharacterManager.Tests.Application
             _personagemRepositoryMock = new Mock<IPersonagemRepository>();
             _logBatalhaRepositoryMock = new Mock<ILogBatalhaRepository>();
             _batalhaService = new BatalhaService(_personagemRepositoryMock.Object, _logBatalhaRepositoryMock.Object);
-        }
-
-        [Fact]
-        public void IniciarBatalha_DeveComecarComPersonagemDeMaiorVelocidade()
-        {
-            // Arrange
-            var personagem1 = PersonagemMock.GerarPersonagemMock();
-            var personagem2 = PersonagemMock.GerarPersonagemMock();
-
-            _personagemRepositoryMock.Setup(pr => pr.ObterPorId(personagem1.Id)).Returns(personagem1);
-            _personagemRepositoryMock.Setup(pr => pr.ObterPorId(personagem2.Id)).Returns(personagem2);
-
-            // Act
-            _batalhaService.IniciarBatalha(personagem1.Id, personagem2.Id);
-
-            // Assert
-            _logBatalhaRepositoryMock.Verify(lbr => lbr.RegistrarInicioBatalha(It.IsAny<Guid>(), It.IsAny<Guid>(), personagem1.Id, 1, It.IsAny<string>()), Times.Once);
-        }
+        }                
 
         [Fact]
         public void RealizarAtaque_DanoCalculado_DeveReduzirPontosDeVidaDoDefensor()

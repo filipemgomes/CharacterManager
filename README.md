@@ -1,8 +1,8 @@
 <h1><b>Character Manager API</b></h1>
   
-<h3><b>Descrição</b>/h3>
+<h3><b>Descrição</b></h3>
 
-<p>API desenvolvida para gerenciar personagens e batalhas em um jogo de RPG. Esta API permite criar personagens, listar personagens, obter detalhes de um personagem específico, iniciar uma batalha entre dois personagens e obter o log da batalha.</p
+<p>API desenvolvida para gerenciar personagens e batalhas em um jogo de RPG. Esta API permite criar personagens, listar personagens, obter detalhes de um personagem específico, iniciar uma batalha entre dois personagens e obter o log da batalha.</p>
 
 <h3><b>Pré-requisitos</b></h3>
 

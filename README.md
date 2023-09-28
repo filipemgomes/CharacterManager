@@ -8,6 +8,7 @@
 
 <p>
 •	.NET 6
+
 •	<b>IDE (Recomendado:</b> Visual Studio ou Visual Studio Code)
 </p>
 

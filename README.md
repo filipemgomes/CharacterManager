@@ -43,11 +43,11 @@ API desenvolvida para gerenciar personagens e batalhas em um jogo de RPG. Esta A
 }
 ```
 
-<b>2. Listar personagens criados:</b>
-•	Use o endpoint ```GET /api/personagem``` para obter a lista de personagens criados.
-•	Anote os IDs dos personagens que deseja usar na batalha.
-<b>3. Iniciar uma batalha:</b>
-•	Use o endpoint ```POST /api/batalha/```iniciar com corpo da requisição:
+2. __Listar personagens criados:__
+* Use o endpoint ```GET /api/personagem``` para obter a lista de personagens criados.
+* Anote os IDs dos personagens que deseja usar na batalha.
+3. __Iniciar uma batalha:__
+* Use o endpoint ```POST /api/batalha/```iniciar com corpo da requisição:
 
 ```
 {
@@ -56,12 +56,6 @@ API desenvolvida para gerenciar personagens e batalhas em um jogo de RPG. Esta A
 }
 ```
 
-________________________________________
-
-<h3><b>Banco de Dados</b></h3>
+## Banco de Dados
 
 A API utiliza um banco de dados In-Memory, o que significa que os dados serão perdidos assim que a aplicação for encerrada.
-
-
-
-

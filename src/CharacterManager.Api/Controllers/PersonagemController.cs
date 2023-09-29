@@ -21,7 +21,7 @@ namespace CharacterManager.Api.Controllers
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
-        [HttpGet]
+        [HttpGet("personagens")]
         public ActionResult<IEnumerable<ListaPersonagemModel>> GetAll()
         {
             var personagens = _personagemRepository.ObterTodos();
@@ -56,7 +56,7 @@ namespace CharacterManager.Api.Controllers
         }
 
         [HttpGet("profissoes")]
-        public IActionResult GetProfissoes()
+        public IActionResult GetProfessions()
         {
             var profissoes = Enum.GetValues(typeof(TipoProfissao))
                                   .Cast<TipoProfissao>()

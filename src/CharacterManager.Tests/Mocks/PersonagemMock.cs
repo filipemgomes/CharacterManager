@@ -6,9 +6,9 @@ namespace CharacterManager.Tests.Mocks
 {
     public static class PersonagemMock
     {
-        public static Personagem GerarPersonagemMock()
+        private static Faker<Personagem> CreateFaker()
         {
-            var faker = new Faker<Personagem>("pt_BR")
+            return new Faker<Personagem>("pt_BR")
                 .CustomInstantiator(f =>
                 {
                     var nome = f.Random.String2(f.Random.Number(1, 15), "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_");
@@ -16,8 +16,16 @@ namespace CharacterManager.Tests.Mocks
 
                     return new Personagem(nome, profissao);
                 });
+        }
 
-            return faker.Generate();
+        public static Personagem GerarPersonagemMock()
+        {
+            return CreateFaker().Generate();
+        }
+
+        public static List<Personagem> GerarListaPersonagemMock(int quantidade)
+        {
+            return CreateFaker().Generate(quantidade);
         }
     }
 }

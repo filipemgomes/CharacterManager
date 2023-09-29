@@ -24,20 +24,21 @@ namespace CharacterManager.Api.Controllers
         [HttpPost("iniciar")]
         public IActionResult IniciarBatalha(Guid personagem1Id, Guid personagem2Id)
         {
-            try
-            {                
-                _batalhaService.IniciarBatalha(personagem1Id, personagem2Id);
+            //try
+            //{
+            _batalhaService.IniciarBatalha(personagem1Id, personagem2Id);
 
-                var logs = _logBatalhaRepository.ObterLogBatalha(personagem1Id, personagem2Id);
-                                
-                var logsModel = _mapper.Map<List<LogBatalhaModel>>(logs);
+            var logs = _logBatalhaRepository.ObterLogBatalha(personagem1Id, personagem2Id);
 
-                return Ok(logsModel);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest($"Erro ao iniciar a batalha: {ex.Message}");
-            }
+            var logsModel = _mapper.Map<List<LogBatalhaModel>>(logs);
+
+            return Ok(logsModel);
+            //}
+            //catch (Exception ex)
+            //{
+            //    return BadRequest($"Erro ao iniciar a batalha: {ex.Message}");
+            //}
         }
+
     }
 }

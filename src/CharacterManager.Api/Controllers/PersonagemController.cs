@@ -25,8 +25,11 @@ namespace CharacterManager.Api.Controllers
         public ActionResult<IEnumerable<ListaPersonagemModel>> GetAll()
         {
             var personagens = _personagemRepository.ObterTodos();
-            return Ok(_mapper.Map<IEnumerable<ListaPersonagemModel>>(personagens));
+
+            return Ok(_mapper.Map<IEnumerable<ListaPersonagemModel>>(personagens ?? new List<Personagem>()));
         }
+
+
 
         [HttpGet("{id}")]
         public ActionResult<PersonagemModel> GetById(Guid id)
